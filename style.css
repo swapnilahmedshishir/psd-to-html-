@@ -1,0 +1,445 @@
+/* ===========
+    BASICK SETUP
+    ============ */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    font-family:'Titillium Web' , sans-serif ;
+}
+
+ul li{
+    list-style-type: none;
+}
+/* ===========
+    REUGEBUL PORPERTY 
+==============*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.btn{
+    border:none;
+    font-size: 18px;
+    padding: 19px 25px;
+    border-radius: 6px;
+    cursor:pointer;
+    outline: none;
+    text-align:center;
+}
+
+/* Heading 1  */
+h1{
+    color:#f7f3ea;
+    font-size: 42.16px;
+    font-family:'TitilliumWeb';
+}
+
+
+/* ===========
+        HEARDER PART
+    ============ */
+header{
+    position: relative;
+    background:linear-gradient(rgba(135, 2, 187, 0.719) ,rgba(135, 2, 187, 0.719)), url(image/bg2.jpg)  ;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 85vh;
+}
+.logo{
+    height: 48px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+/* navigation part */
+
+.menu{
+    right: 1px;
+    float: right;
+    margin-top: 30px;
+}
+.menu li{
+   
+    display: inline-block;
+    margin-left: 12px;
+    
+   
+}
+
+.menu li:first-child{
+    margin-left: 0;
+}
+
+.menu li a:link,
+.menu li a:visited{
+    color: #fff;
+    text-decoration: none;
+   
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.menu li:hover a:link,
+.menu li:hover a:visited{
+    background-color: #643a79;
+}
+.menu li a.active{
+    background-color: #643a79;
+}
+/* header 2n part */
+
+.hero-text-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.hero-text-box .btn-hero{
+   margin: 0 auto;
+   background-color: #eb7d4b;
+   color: #f6c9b9;
+  
+}
+.btn:hover{
+    background-color: #a74213;
+}
+
+/* bg main div part  */
+.bg-main-div{
+    position: relative;
+    background-image:linear-gradient(rgba(23, 194, 163, 0.582) ,rgba(23, 194, 163, 0.582)), url(image/bg1.jpg)  ;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-size: cover;
+ 
+    
+}
+
+
+.text_hero{
+    text-align: center;
+    position:relative;
+    top:55px;
+    
+}
+hr{
+    width: 120px;
+    height:5px;
+    background-color: #1b3a35;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top:100%;
+    left:50%;
+    transform: translate(-50%, -100%);
+    margin-top: 30px;
+}
+.hero_head{
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+.grid_text_div{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   padding: 110px 0 90px;
+}
+.grid-item{
+    padding: 20px;
+    text-align: center;
+}
+.grid-item .heading3{
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.grid-item p{
+    color: #ffffff;
+    margin-top: 12px;
+}
+/* team part start*/
+
+.team_part{
+    position: relative;
+    background:linear-gradient(rgba(231, 241, 248, 0.541) ,rgba(231, 241, 248, 0.541)), url(image/pexels-fauxels-3184360.jpg)  ;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-size: cover;
+    
+}
+.team_text_part{
+    padding: 125px 0;
+    text-align: center;
+    color: #3c4761;
+}
+.team_heading_tag{
+    margin-top: 20px;
+}
+
+.team_grid_part{
+    box-sizing: border-box;
+ display: grid;
+ grid-template-columns: auto auto auto auto auto;
+ text-align: center;
+ position: relative;
+ 
+}
+/* team grid image */
+.tream_img{
+    width: 190px;
+    height: 170px;
+    border-radius: 50%;
+
+    
+}
+.team_heading5{
+    color: #17a6da;
+}
+.team_para{
+    color: #445269;
+    margin-top: 41px;
+}
+
+/* socail link */
+.team_social_link{
+    padding-top: 20px;
+}
+
+.team_social_link ul {
+   
+   overflow: hidden;
+}
+.team_social_link ul li {
+    display: inline-block;
+   
+}
+.team_social_link ul li a img{
+    margin-top: 10px;
+    background-color: #bdd1df;
+    color: #ffffff;
+    border-radius: 100%;
+}
+
+/* skill part start */
+.skill_part_start{
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)), url(image/skill-development.jpg) ;
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    padding: 60px;
+}
+.skill_part_text{
+    text-align: center;
+   
+
+}
+.skill_part_text .skill_heading_tag{
+        font-size: 35px;
+        color:#3c4761 ;
+}
+.skill_part_text  p{
+ color: #3c4761;
+ font-size: 18px;
+ padding: 30px 0;
+}
+
+/* progress var  */
+
+.skill_part_progress_var{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 50px;
+
+}
+.skill{
+  margin: 0 50px;
+}
+/* circle progress var start */
+.skill{
+  width: 160px;
+  height: 160px;
+  /* background: chartreuse; */
+  position: relative;
+}
+.outer{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15) ,
+              -6px -6px 10px -1px rgba(255,255,255,0.7);
+
+
+}
+.inner{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+              -0.5px -0.5px 0px rgba(255,255,255,1),
+              0.5px 0.5px 0px rgba(0,0,0,0.15),
+              0px 12px 10px -10px rgba(0,0,0,0.05) ;
+
+}
+#number{
+  font-weight: 500px;
+  color: #555;
+  font-size: 40px;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* circle 1 */
+circle{
+  fill: none; 
+  /* stroke: url(#circle1); */
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+ 
+}
+
+#circle1{
+  animation: circle1 2s linear forwards;
+}
+@keyframes circle1{
+  100%{
+      stroke-dashoffset: 147;
+  }
+}
+#circle2{
+  animation: circle2 2s linear forwards;
+}
+@keyframes circle2{
+  100%{
+      stroke-dashoffset: 165;
+  }
+}
+
+#circle3{
+  animation:circle3 2s linear forwards;
+}
+@keyframes circle3{
+  100%{
+      stroke-dashoffset: 165;
+  }
+}
+
+#circle4{
+  animation: circle4 2s linear forwards;
+}
+@keyframes circle4{
+  100%{
+      stroke-dashoffset: 165;
+  }
+}
+
+
+/* protfolio part start */
+.protfolio_part{
+
+    background:linear-gradient(rgba(255, 221, 153, 0.534) , rgba(255, 221, 153, 0.534)) , url(image/protfolio-image.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+
+}
+.protfolio-text{    
+   text-align: center;
+}
+.btn_div{
+    padding: 20px 0px;
+}
+.btn_div button{
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    background-color:#ebc985  ;
+    display: inline-block;
+   border-radius: 3px;
+   
+}
+.btn_div button a{
+    text-decoration: none;
+    color:#474747 ;
+    font-size: 18px;
+}
+
+.btn_div button:hover{
+    background-color: #ffffff;
+}
+
+.protfolio-image{
+    box-sizing: border-box;
+    padding: 59px 0px;
+   display: block;
+   margin: 0 auto;
+}
+.first-image{
+    padding-bottom: 67px;
+}
+/* protfolio-last-button */
+.protfolio-last-button{
+    display: block;
+    margin: 0 auto;
+    padding: 25px 46px ;
+    text-align: center;
+    font-size: 18px;
+    background-color: #17c2a4;
+    color: #f2f2f2;
+    border: none;
+   border-bottom: 4px solid #14a58c;
+   border-radius: 5px;
+}
+
+/* About-us-section start */
+.About-us-section{
+    background: #d74680;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+.About-us-text{
+    text-align: center;
+}
+
+.full-image-div{
+    display: flex;
+}
+
+.imge-div{
+    width: 50px;
+    border-radius: 50%;
+}
