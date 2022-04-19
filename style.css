@@ -8,6 +8,8 @@
 }
 
 body{
+    /* clear: both; */
+    /* position: absolute; */
     font-family:'Titillium Web' , sans-serif ;
 }
 
@@ -18,8 +20,11 @@ ul li{
     REUGEBUL PORPERTY 
 ==============*/
 .row{
-    max-width: 1140px;
-    margin: 0 auto;
+    clear: both;
+    /* position: absolute; */
+    /* height: 200px; */
+    /* max-width: 1140px;
+    margin: 0 auto; */
 }
 .btn{
     border:none;
@@ -42,31 +47,37 @@ h1{
 /* ===========
         HEARDER PART
     ============ */
-header{
-    position: relative;
+section{
+    min-height: 130vh;
+    clear: both;
+}
+    
+#frist-section{   
     background:linear-gradient(rgba(135, 2, 187, 0.719) ,rgba(135, 2, 187, 0.719)), url(image/bg2.jpg)  ;
     background-attachment: initial;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 85vh;
-}
+}  
 .logo{
     height: 48px;
-    width: auto;
+    /* width: auto; */
     float: left;
-    margin-top: 10px;
+    margin: 10px 0px 0px 30px;
+    /* clear: both; */
 }
 
 /* navigation part */
 
 .menu{
-    right: 1px;
+    /* right: 1px; */
     float: right;
     margin-top: 30px;
+    /* justify-content: right; */
+    
+    /* clear: both; */
 }
 .menu li{
-   
     display: inline-block;
     margin-left: 12px;
     
@@ -81,7 +92,6 @@ header{
 .menu li a:visited{
     color: #fff;
     text-decoration: none;
-   
     padding: 5px 10px;
     border-radius: 4px;
 }
@@ -96,16 +106,26 @@ header{
 
 .hero-text-box{
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top:60%;
+    left: 55%;    
+    transform: translate(-50%,-40%);
+    clear: both;
+    min-width: 500px;
+    
+    
+}
+#work-us-btn{
+  margin:  50px;
 }
 
-
 .hero-text-box .btn-hero{
-   margin: 0 auto;
+   /* margin: 0 auto; */
    background-color: #eb7d4b;
    color: #f6c9b9;
+   
+   /* margin-right: 50%; */
+   /* justify-content: center;
+   align-items: center; */
   
 }
 .btn:hover{
@@ -114,12 +134,14 @@ header{
 
 /* bg main div part  */
 .bg-main-div{
-    position: relative;
+    /* position: relative; */
     background-image:linear-gradient(rgba(23, 194, 163, 0.582) ,rgba(23, 194, 163, 0.582)), url(image/bg1.jpg)  ;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position:center center ;
     background-size: cover;
+    clear: both;
+    padding-bottom: 150px;
  
     
 }
@@ -127,8 +149,9 @@ header{
 
 .text_hero{
     text-align: center;
-    position:relative;
-    top:55px;
+    /* position:relative;
+    top:55px; */
+    padding-top:40px;
     
 }
 hr{
@@ -142,6 +165,7 @@ hr{
     left:50%;
     transform: translate(-50%, -100%);
     margin-top: 30px;
+   
 }
 .hero_head{
     text-align: center;
@@ -153,56 +177,67 @@ hr{
 .grid_text_div{
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-   padding: 110px 0 90px;
-}
-.grid-item{
-    padding: 20px;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    padding-top: 20px;
     text-align: center;
-}
+    
+} 
 .grid-item .heading3{
+    box-sizing: border-box;
     margin-top: 25px;
     text-transform: uppercase;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 23px;
 }
 
 .grid-item p{
+    box-sizing: border-box;
     color: #ffffff;
-    margin-top: 12px;
+    margin-top: 19px;
+}
+.grid-item img{
+    box-sizing: border-box;
+    height: 50%;
+    clear: both;
 }
 /* team part start*/
 
 .team_part{
-    position: relative;
-    background:linear-gradient(rgba(231, 241, 248, 0.541) ,rgba(231, 241, 248, 0.541)), url(image/pexels-fauxels-3184360.jpg)  ;
+    /* position: relative; */
+    background:linear-gradient(rgba(231, 241, 248, 0.856) ,rgba(231, 241, 248, 0.842)), url(image/pexels-fauxels-3184360.jpg)  ;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position:center center ;
     background-size: cover;
-    
+    clear: both;
 }
 .team_text_part{
-    padding: 125px 0;
+    padding: 45px 0;
     text-align: center;
     color: #3c4761;
 }
 .team_heading_tag{
     margin-top: 20px;
 }
-
-.team_grid_part{
+.team_item{
     box-sizing: border-box;
- display: grid;
- grid-template-columns: auto auto auto auto auto;
- text-align: center;
- position: relative;
- 
+    min-width: 200px;
+    
+
 }
+.team_grid_part{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 9px;
+}
+    
+
+
 /* team grid image */
-.tream_img{
-    width: 190px;
-    height: 170px;
+.team_grid_part .tream_img{
+   height: 30%;
+    width: 30%;
     border-radius: 50%;
 
     
@@ -212,38 +247,39 @@ hr{
 }
 .team_para{
     color: #445269;
-    margin-top: 41px;
+    margin-top: 20px;
 }
 
 /* socail link */
 .team_social_link{
-    padding-top: 20px;
+    padding:23px 0px 45px 0px;
+   
 }
 
 .team_social_link ul {
-   
+   clear: both;
    overflow: hidden;
 }
 .team_social_link ul li {
-    display: inline-block;
+   display: inline;
    
 }
 .team_social_link ul li a img{
-    margin-top: 10px;
+    margin-top: 5px;
     background-color: #bdd1df;
     color: #ffffff;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 /* skill part start */
 .skill_part_start{
     position: relative;
-    background: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)), url(image/skill-development.jpg) ;
+    background: linear-gradient(rgba(255, 250, 250, 0.938),rgba(238, 234, 234, 0.925)), url(image/skill-development.jpg) ;
     background-position: center bottom;
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    padding: 60px;
+     padding: 60px 0px;
 }
 .skill_part_text{
     text-align: center;
@@ -263,14 +299,19 @@ hr{
 /* progress var  */
 
 .skill_part_progress_var{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 90px 0px;
+  max-width:670px ;
+  margin: 0 auto;
 
+}
+#individul-progress-bar{
+    padding:40px 0px ;
 }
 .skill{
   margin: 0 50px;
+
 }
 /* circle progress var start */
 .skill{
@@ -372,6 +413,8 @@ circle{
     justify-content: center;
     align-items: center;
     padding: 100px 0px;
+    /* max-width: 700px;
+    margin: 0 auto; */
 
 }
 .protfolio-text{    
@@ -405,6 +448,7 @@ circle{
     box-sizing: border-box;
     padding: 59px 0px;
    display: block;
+   
    margin: 0 auto;
 }
 .first-image{
@@ -424,22 +468,3 @@ circle{
    border-radius: 5px;
 }
 
-/* About-us-section start */
-.About-us-section{
-    background: #d74680;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0px;
-}
-.About-us-text{
-    text-align: center;
-}
-
-.full-image-div{
-    display: flex;
-}
-
-.imge-div{
-    width: 50px;
-    border-radius: 50%;
-}
